@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Admin Dashboard</title>
+
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="grid-container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="menu-icon">
+        <span class="material-icons-outlined">menu</span>
+      </div>
+      <div class="header-left">
+
+        <input style="background-color: #E5E4E2;border: none; width: 300px;height: 30px;border-radius: 5px;" type="text"
+          placeholder="Search..." style="width: 300px;" />
+
+
+      </div>
+      <div class="header-right">
+        <select style="color:black;">
+          <option value="usa">English(UK)</option>
+          <option value="canada">English(USA)</option>
+          <!-- Add more options as needed -->
+        </select>
+
+      </div>
+      <div class="profile">
+        <div class="profile-info">
+          <!-- <span class="name">Radheshyam Mallick</span> -->
+          <br>
+          <span class="id">ID: SM/KMC/5/002</span>
+          <img
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Profile Picture" />
+        </div>
+
+
+
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+
+
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <span class="material-icons-outlined"></span>Today
+          <h5>Wed Jul 19,2023</h5>
+
+        </div>
+        <div class="c2">
+          <h4 style="font-weight: bold;font-size: 15px">7:50 hrs.</h4>
+          <h5>Counting....</h5>
+        </div>
+
+      </div>
+      <hr class="sidebar-divider my-0">
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="glyphicon glyphicon-th-large"></span> All Apps
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="glyphicon glyphicon-gift"></span> Dashboard
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="glyphicon glyphicon-user"></span> Employees
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="glyphicon glyphicon-list"></span> Roles & Permission
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="glyphicon glyphicon-calendar"></span> Time & Attendance
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="glyphicon glyphicon-map-marker"></span> GEO-fence
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="glyphicon glyphicon-new-window"></span> Leave
+          </a>
+
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="glyphicon glyphicon-list-alt"></span> Reports
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <div><button class="gwn" style="font-weight: bold;font-size: 24px;"> GewinnsHR</button></div>
+          </a>
+        </li>
+
+
+      </ul>
+    </aside>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+
+    <main class="main-container">
+      <!-- <div class="main-title">
+          <p class="font-weight-bold">DASHBOARD</p>
+        </div> -->
+      <div class="navbar">
+        <a href="/index.html">Admin Dashboard</a>
+        <a href="/manager.html">Manager Dashboard</a>
+        <a href="#services">Owner Dashboard</a>
+
+      </div>
+
+      <div class="main-cards">
+
+
+
+        <div class="card">
+          <div class="card-inner">
+            <button id="todayButton" class="c5" style="margin-right: 10px;">Today</button>
+            <button id="weekButton" class="c5" style="margin-right: 10px;"> This Week</button>
+            <select style="margin-right: 0px;height: 25px;" class="c5">
+              <option value="dept">Department</option>
+              <option value="dept 1">Dept 1</option>
+              <option value="dept 2">Dept 2</option>
+              <option value="dept 3">Dept 3</option>
+            </select>
+            <br>
+          </div>
+          <br>
+          <table id="dataTable" style=" height: 80px; width: 280px; border-collapse: collapse ;color: #033E3E;">
+            <tr>
+              <th rowspan="5" style="border: none;">
+                <h1 style="font-weight: bold;font-size: 45px;">92 %</h1>
+                <p>Present</p>
+
+              </th>
+            </tr>
+            <tr class="c4">
+              <td style="border: none;"></td>
+              <td style="border: none;"></td>
+              <td style="border: none;">Absent 2%</td>
+            </tr>
+            <tr class="c4">
+              <td style="border: none;"></td>
+              <td style="border: none;"></td>
+              <td style="border: none;">WTH 2%</td>
+            </tr>
+            <tr class="c4">
+              <td style="border: none;"></td>
+              <td style="border: none;"></td>
+              <td style="border: none;">Week off 3%</td>
+            </tr>
+            <tr class="c4">
+              <td style="border: none;"></td>
+              <td style="border: none;"></td>
+              <td style="border: none;">Leave 1%</td>
+            </tr>
+          </table>
+
+          <table id="dataTable2"
+            style="display: none; height: 80px; width: 280px;  border-collapse: collapse;color: #033E3E;">
+            <tr class="c4">
+              <th rowspan="5" style="border: none;">
+                <h1 style="font-weight: bold;font-size: 45px;">91%</h1>
+                <p>Present</p>
+
+              </th>
+            </tr>
+            <tr class="c4">
+              <td style="border: none;"></td>
+              <td style="border: none;"></td>
+              <td style="border: none;">Absent 2%</td>
+            </tr>
+            <tr class="c4">
+              <td style="border: none;"></td>
+              <td style="border: none;"></td>
+              <td style="border: none;">WTH 1%</td>
+            </tr>
+            <tr class="c4">
+              <td style="border: none;"></td>
+              <td style="border: none;"></td>
+              <td style="border: none;">Week off 3%</td>
+            </tr>
+            <tr class="c4">
+              <td style="border: none;"></td>
+              <td style="border: none;"></td>
+              <td style="border: none;">Leave 3%</td>
+            </tr>
+          </table>
+
+          <span class="text-primary font-weight-bold"></span>
+        </div>
+
+        <div class="card">
+          <div class="card-inner" >
+            <select class="c5 " id="hr" style="margin-right: 5px;">
+              <option value="dept">Department</option>
+              <option value="dept 1">Dept 1</option>
+              <option value="dept 2">Dept 2</option>
+              <option value="dept 3">Dept 3</option>
+            </select>
+
+            <div id="reportrange" class="c5 " style="width:40%;margin-right: 2px">
+              <span></span>
+              <i class="fa fa-caret-down"></i>
+            </div>
+            <button class="c5 " style="margin-right: 0px;">Hire vs Retire</button>
+
+
+            <!-- <div id="area-chart" style="max-width: 300px; height: 200px;"></div> -->
+          </div>
+
+          <div id="area-chart"></div>
+
+        </div>
+
+        <div class="card2">
+          <div class="card-inner"></div>
+          <div class="box">
+            <h4 style="text-align: center;color:#033E3E;font-size: 24px;font-weight: bold;">LICENSE</h4>
+          </div>
+
+          <h2 style="text-align: center;color: white;font-weight: bold;">579</h2>
+          <hr style=" border: 0.5px solid whitesmoke; margin: 20px 0;">
+          <h2 style="text-align: center;color: white;font-weight:bold;">585</h2>
+        </div>
+
+      </div>
+
+      <div class="charts">
+        <div class="charts-card">
+          <table>
+            <thead>
+              <tr>
+                <th style="border: none;">
+                  <label style="color: black;" for="bdaymonth">From:</label>
+                  <input type="month" id="bdaymonth1" name="bdaymonth" style="width: 120px;">
+
+                </th>
+
+                <th style="border: none;">
+                  <label style="color: black;" for="bdaymonth">To:</label>
+                  <input type="month" id="bdaymonth2" name="bdaymonth" style="width: 120px;">
+
+                </th>
+                <th style="border: none;">
+                  <label for="cars"></label>
+
+                  <select name="cars" id="cars" style="height: 26px;border:1px solid #033E3E ;">
+                    <option value="volvo">Department</option>
+                    <option value="saab">cs</option>
+                    <option value="mercedes">it</option>
+                    <option value="audi">ee</option>
+                  </select>
+                </th>
+
+              </tr>
+
+            </thead>
+          </table>
+          <br>
+
+
+          <p class="chart-title" style="color: black;">Active Employees</p>
+          <div id="barchart_material" ></div>
+        </div>
+        <!-- <div class="charts-card"> -->
+        <!-- <p class="chart-title">Revenue vs Profit</p> -->
+        <!-- <div id="bar-chart"  style="width:100%;max-width:600px"></div>
+          </div> -->
+
+        <div class="charts-card">
+          <table>
+            <thead>
+              <tr>
+                <th style="border: none;">
+                  <label style="color: black;" for="bdaymonth">From:</label>
+                  <input type="month" id="bdaymonth3" name="bdaymonth" style="width: 120px;">
+
+
+
+                </th>
+
+                <th style="border: none;">
+                  <label style="color: black;" for="bdaymonth2">To:</label>
+                  <input type="month" id="bdaymonth4" name="bdaymonth" style="width: 120px;">
+
+                </th>
+                <th style="border: none;">
+                  <label for="cars"></label>
+
+                  <select name="cars" id="cars" style="height: 26px;border:1px solid #033E3E ;">
+                    <option value="volvo">Production</option>
+                    <option value="saab">cs</option>
+                    <option value="mercedes">it</option>
+                    <option value="audi">ee</option>
+                  </select>
+                </th>
+
+              </tr>
+
+            </thead>
+          </table>
+          <br>
+          <p class="chart-title" style="color: black;">Head Count</p>
+          <canvas id="myChart"></canvas>
+          <p class="chart-title" style="color:  #033E3E;">3:1 Ratio</p>
+        </div>
+
+
+
+
+      </div>
+    </main>
+    <!-- End Main -->
+
+  </div>
+
+  <!-- Scripts -->
+  <!-- ApexCharts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <!-- Include Date Range Picker -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+  <!-- Custom JS -->
+  <script src="js/chart.js"></script>
+  <script>
+    $(function () {
+      var start = moment('April 2023', 'MMMM YYYY');
+      var end = moment('July 2023', 'MMMM YYYY');
+
+      function cb(start, end) {
+        var displayText = start.format('MMMM YYYY') + ' - ' + end.format('MMMM YYYY');
+        $('#reportrange span').html(displayText);
+      }
+
+      $('#reportrange').daterangepicker({
+        startDate: start,
+        endDate: end,
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+
+      cb(start, end);
+    });
+
+
+  </script>
+  <!-- <script src="js/chart2.js"></script> -->
+</body>
+
+</html>

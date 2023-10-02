@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    #nameList {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+
+                <input style="background-color: #E5E4E2;border: none; width: 300px;height: 30px;border-radius: 5px;" type="text" placeholder="Search..." style="width: 300px;" />
+
+
+            </div>
+            <div class="header-right">
+                <select style="color:black;">
+                    <option value="usa">English(UK)</option>
+                    <option value="canada">English(USA)</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+            </div>
+            <div class="profile">
+                <div class="profile-info">
+                    <!-- <span class="name">John Doe</span>
+                    <span class="id">ID: 123456</span> -->
+                    <!-- <span class="name">Radheshyam Mallick</span> -->
+                    <br>
+                    <span class="id">ID: SM/KMC/5/002</span>
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Profile Picture" />
+                </div>
+
+
+        </header>
+
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+
+
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined"></span>Today
+                    <h5>Wed Jul 19,2023</h5>
+
+                </div>
+                <div class="c2">
+                    <h4 style="font-weight: bold;font-size: 15px;">7:50 hrs.</h4>
+                    <h5>Counting....</h5>
+                </div>
+
+            </div>
+            <hr class="sidebar-divider my-0">
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="glyphicon glyphicon-th-large"></span> All Apps
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/index.html" target="_blank">
+                        <span class="glyphicon glyphicon-gift"></span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="glyphicon glyphicon-user"></span> Employees
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="glyphicon glyphicon-list"></span> Roles & Permission
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="glyphicon glyphicon-calendar"></span> Time & Attendance
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="glyphicon glyphicon-map-marker"></span> GEO-fence
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="glyphicon glyphicon-new-window"></span> Leave
+                    </a>
+
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="glyphicon glyphicon-list-alt"></span> Reports
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <div><button class="gwn" style="font-weight: bold;font-size: 24px;"> GewinnsHR</button></div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+
+        <main class="main-container">
+            <!-- <div class="main-title">
+          <p class="font-weight-bold">DASHBOARD</p>
+        </div> -->
+            <div class="navbar">
+                <a href="/index.html">Admin Dashboard</a>
+                <a href="#about">Manager Dashboard</a>
+                <a href="#services">Owner Dashboard</a>
+
+            </div>
+            <div class="c1">
+                <label for="cars" style="color: black;font-size: 17px;">Country</label>
+                <select >
+                    <option value="dept">India</option>
+                    <option value="dept 1">USA</option>
+                    <option value="dept 2">UK</option>
+                    <option value="dept 3">Japan</option>
+
+                </select>
+
+                <label style="color: black;font-size: 17px;" for="cars">State</label>
+                <select >
+                    <option value="dept">West Bengal</option>
+                    <option value="dept 1">State 1</option>
+                    <option value="dept 2">State 2</option>
+                    <option value="dept 3">State 3</option>
+
+                </select>
+                <label style="color: black;font-size: 17px;" for="cars">Branch</label>
+                <select >
+                    <option value="dept">Kolkata</option>
+                    <option value="dept 1">Branch 1</option>
+                    <option value="dept 2">Branch 2</option>
+                    <option value="dept 3">Branch 3</option>
+
+                </select>
+                <label style="color: black;font-size: 17px;" for="cars">Department</label>
+                <select >
+
+                    <option value="dept 1">Production</option>
+                    <option value="dept 2">Department 2</option>
+                    <option value="dept 3">Department 3</option>
+
+                </select>
+                <label style="color: black;font-size: 17px;" for="cars">Shift</label>
+                <select >
+                    <option value="dept">Day</option>
+                    <option value="dept 1">Night</option>
+                    <option value="dept 2">Dept 2</option>
+                    <option value="dept 3">Dept 3</option>
+
+                </select>
+            </div>
+
+            <div class="main-cardss">
+
+
+
+                <div class="card" >
+                    <div class="card-inner">
+                        <button id="todayButton" class="c5" style="margin-right: 8px;">Today</button>
+                        <button id="weekButton" class="c5" style="margin-right: 8px;"> This Week</button>
+                        <select class="c5" style="margin-right: 8px;width: 100px;height: 25px;">
+                            <option value="dept">Month</option>
+                            <option value="dept 1">April</option>
+                            <option value="dept 2">May</option>
+                            <option value="dept 3">June</option>
+                            <option value="dept 3">July</option>
+                        </select>
+                        <br>
+
+
+
+
+
+
+                    </div>
+                    <br>
+                    <table id="dataTable"
+                        style="  height: 80px; width: 300px; border-collapse: collapse;color: #033E3E;">
+                        <tr>
+                            <th rowspan="5" style="border: none;">
+                                <h1 style="font-weight: bold;font-size: 45px;">92 %</h1>
+                                <p>Present</p>
+                            </th>
+                        </tr>
+                        <tr class="c4">
+                            <td style="border: none;"></td>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">Absent 2%</td>
+                        </tr>
+                        <tr class="c4">
+                            <td style="border: none;"></td>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">WTH 2%</td>
+                        </tr>
+                        <tr class="c4">
+                            <td style="border: none;"></td>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">Week off 3%</td>
+                        </tr>
+                        <tr class="c4">
+                            <td style="border: none;"></td>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">Leave 1%</td>
+                        </tr>
+                    </table>
+
+                    <table id="dataTable2"
+                        style="display: none;  height: 80px; width: 300px; border-collapse: collapse;color: #033E3E;">
+                        <tr>
+                            <th rowspan="5" style="border: none;">
+                                <h1 style="font-weight: bold;font-size: 45px;">91 %</h1>
+                                <p>Present</p>
+
+                            </th>
+                        </tr>
+                        <tr class="c4">
+                            <td style="border: none;"></td>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">Absent 2%</td>
+                        </tr>
+                        <tr class="c4">
+                            <td style="border: none;"></td>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">WTH 1%</td>
+                        </tr>
+                        <tr class="c4">
+                            <td style="border: none;"></td>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">Week off 3%</td>
+                        </tr>
+                        <tr class="c4">
+                            <td style="border: none;"></td>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">Leave 3%</td>
+                        </tr>
+                    </table>
+
+
+                    <span class="text-primary font-weight-bold"></span>
+                </div>
+
+                <div class="card" id="hlw">
+                    <div class="card-inner" >
+                        <div class="multiselect" style="height: 25px;">
+                            <div class="selectBox" onclick="showCheckboxes()">
+                                <select style="height: 25px;" class="c5">
+                                    <option>All</option>
+                                </select>
+                                <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxes">
+                                <label for="one">
+                                    <input type="checkbox" id="one" />Present</label>
+                                
+                                <label for="three">
+                                    <input type="checkbox" id="three" />Absent</label>
+                                <label for="four">
+                                    <input type="checkbox" id="three" />WFH</label>
+                                <label for="five">
+                                    <input type="checkbox" id="three" />Week Off</label>
+                                <label for="three">
+                                    <input type="checkbox" id="three" />Leave</label>
+                            </div>
+                        </div>
+
+
+                        <button class="c5" onclick="toggleChart('column')">Column</button>
+
+                        <button class="c5" onclick="toggleChart('line')">Line</button>
+                        <!-- <button class="c5" >Data</button> -->
+                        <button class="c5" id="attendanceStatusButton">Attendance Status</button>
+                        <!-- <div id="area-chart" style="max-width: 300px; height: 200px;"></div> -->
+
+                    </div>
+                   
+                        <div id="chart-container" ></div>
+
+                  
+                   
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="charts">
+                <div class="charts-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="border: none;">
+                                    <label style="color: black;" for="bdaymonth">From:</label>
+                                    <input type="date" id="date1" name="date1" style="width: 120px;">
+
+                                </th>
+
+                                <th style="border: none;">
+                                    <label style="color: black;" for="bdaymonth">To:</label>
+                                    <input type="date" id="date2" name="date2" style="width: 120px;">
+
+                                </th>
+
+
+                            </tr>
+
+                        </thead>
+                    </table>
+
+
+                    <canvas id="myChart" style="width:100%;max-width:600px;height: 220px;"></canvas>
+                    <br>
+                    <table style="color: black;">
+                        <tr>
+                            <th rowspan="2" style="background-color: #98FB98;">Payable Hours</th>
+                            <th>Prediction</th>
+                            <th>Overtime</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>799.00</td>
+                            <td>249.40</td>
+                            <td>1048.40</td>
+                        </tr>
+                    </table>
+
+
+
+
+
+                </div>
+                <!-- <div class="charts-card"> -->
+                <!-- <p class="chart-title">Revenue vs Profit</p> -->
+                <!-- <div id="bar-chart"  style="width:100%;max-width:600px"></div>
+          </div> -->
+
+                <div class="charts-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="border: none;">
+                                    <label style="color: black;" for="bdaymonth">From:</label>
+                                    <input type="date" id="date3" name="date3" style="width: 120px;">
+
+                                </th>
+
+                                <th style="border: none;">
+                                    <label style="color: black;" for="bdaymonth">To:</label>
+                                    <input type="date" id="date4" name="date4" style="width: 120px;">
+
+                                </th>
+
+
+                            </tr>
+
+                        </thead>
+                    </table>
+
+
+                    <canvas id="myChart2" style="width:100%;max-width:600px;height: 220px;"></canvas>
+                    <br>
+                    <table style="color: black;">
+                        <tr>
+                            <th rowspan="2" style="background-color: #98FB98;">Overtime vs Idle</th>
+                            <th>Overtime</th>
+                            <th>Idle</th>
+                            <th>Difference</th>
+                        </tr>
+                        <tr>
+                            <td>249.40</td>
+                            <td>112.00</td>
+                            <td>137.40</td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div class="charts-card">
+
+                    <div>
+                        <h4 class="alert" style="color: black;">Alerts & Approvals</h4>
+                       
+                        <!-- <h6>Attendance</h6><button id="showRequestBtn">v</button><button id="addRequestBtn">+</button>
+                        <ul id="requests"></ul> -->
+                        <h4 style="color: black;"> Attendance request&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="showRequestBtn"
+                                style="width: auto;border: white">v</button> <button id="addRequestBtn"
+                                style="width: auto;border: white">+</button></h4>
+                        <div id="equestList">
+
+                            <ul id="requests"></ul>
+                        </div>
+                        <!-- <label for="cars"> Attendance Request</label>
+                        <select>
+                            <option value="dept"></option>
+                            <option value="dept 1">Dept 1</option>
+                            <option value="dept 2">Dept 2</option>
+                            <option value="dept 3">Dept 3</option>
+
+                        </select> -->
+
+
+                        <hr style=" border: 0.5px solid #808080; margin: 20px 0;">
+                        <h4 style="color: black;"> Leave Request&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="showNamesBtn" style="width: auto;border: white">v</button> <button
+                                id="addNameBtn" style="width: auto;border: white">+</button> </h4>
+                        <div id="nameList">
+
+                            <ul id="names"></ul>
+                        </div>
+                        <!-- <label for="cars"> Leave Request</label>
+                        <select>
+                            <option value="dept">Sumit</option>
+                            <option value="dept 1">Sanjay</option>
+
+
+                        </select> -->
+
+
+                        <hr style=" border: 6px solid #E5E4E2; margin: 20px 0;">
+                        <h4 class="alert" style="color: black;">Announcements&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="addAnnouncementBtn"
+                                style=" background-color: #87CEFA;border: #87CEFA;">+</button></h4>
+
+
+                        <hr style=" border: 1px solid #808080; margin: 20px 0;">
+                        <img src="/images/logo.jpg" alt="hhh"
+                            style="height: 120px;width: 120px;  display: block; margin: 0 auto;">
+                        <br>
+                        <p id="announcementText" style="text-align: center;"></p>
+
+
+
+                    </div>
+                    <div></div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </main>
+        <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="js/chart2.js"></script>
+    <!-- <script src="js/chart2.js"></script> -->
+</body>
+
+</html>
